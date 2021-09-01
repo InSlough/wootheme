@@ -122,6 +122,10 @@ picture img {
   margin: 0 auto;
 }
 
+.ta-c {
+  text-align: center;
+}
+
 // p {
 //   margin-bottom: 0;
 // }
@@ -183,12 +187,22 @@ h1 {
 h3 {
  font-size: 30px;
 }
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
 
-p {
+ h6 {
   font-size: 18px;
+}
+p {
+  font-style: 16px;
 }
 
 button {
   text-transform: uppercase;
 }
 
+section {
+  margin: 100px 0;
+}
