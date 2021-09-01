@@ -49,4 +49,60 @@ html.desktop {
   padding-top: 5rem;
 }
 
+.first-section {
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  h1 {
+    margin-bottom: 0;
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  p {
+    font-weight: bold;
+    margin-top: 65px;
+  }
+  .fb-block {
+    margin-bottom: 50px;
+    button {
+      margin-top: 20px;
+      margin-left: 30px;
+      position: relative;
+      padding: 10px 49px 10px 25px;
+      &::after {
+        content: url("../img/bm.svg");
+        position: absolute;
+        margin-top: -1px;
+        padding-left: 15px;
+      }
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
+.btn.s-btn {
+  font-size: 13px;
+  padding: 13px 40px;
+  background: #bb9a61;
+  color: #fff;
+  font-weight: bold;
+}
+.first-section.bg {
+  background-image: url("../img/fs-1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.first-section-content {
+  // margin: 0 0 50px 50px;
+}
+.first-section > .row {
+  background: rgba(0, 0, 0, 0.5);
+}
 
+.img-block {
+  img {width: 100%;}
+}

@@ -18,7 +18,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
   }
   return false;
 };
-// gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 jQuery(function ($) {
   var $B = $("body");
   DEV && console.log("Start Site jQuery, site Link:", siteUrl, "| current Link:", window.location.href);
@@ -38,7 +38,7 @@ jQuery(function ($) {
 
     setVH();
   $(window).resize(setVH);
-  // device.onChangeOrientation(() => setVH);
+  device.onChangeOrientation(() => setVH);
 
 
   var html = document.documentElement;
@@ -46,7 +46,7 @@ jQuery(function ($) {
   var footer_height = $("footer").outerHeight(true);
   var scroller = {
     target: $(".desktop .scroll-container")[0],
-    ease: 0.1,
+    ease: 0.1, 
     endY: 0,
     y: 0,
     resizeRequest: 1,
@@ -109,7 +109,7 @@ jQuery(function ($) {
       if (!isDown) return;
       e.preventDefault();
       var x = e.pageX - slider.offsetLeft;
-      var walk = (x - startX) * 1.366;
+      var walk = (x - startX) * 1.366; 
       slider.scrollLeft = scrollLeft - walk;
     });
   }
@@ -120,11 +120,11 @@ jQuery(function ($) {
 
   });
 
-  // gsap.set(".site-header > div nav li", { opacity: 0, y: -50 });
-  // $B.on("loaded_reveal", function () {
-  //   gsap.to(".site-header > div nav li", { opacity: 1, y: 0, duration: 0.5, stagger: 0.25 });
+  gsap.set(".site-header > div nav li", { opacity: 0, y: -50 });
+  $B.on("loaded_reveal", function () {
+    gsap.to(".site-header > div nav li", { opacity: 1, y: 0, duration: 0.5, stagger: 0.25 });
 
-  // });
+  });
 
   const bgLImg1 = "linear-gradient(115deg, #4e596c 0%, #4e596c 0%, #1f2837 0%, #1f2837 100%)";
   const bgLImg2 = "linear-gradient(115deg, #4e596c 0%, #4e596c 100%, #1f2837 100%, #1f2837 100%)";
@@ -168,7 +168,7 @@ jQuery(function ($) {
   $(window).on("scroll", siteMovement);
   function siteMovement() {
     if ($(this).scrollTop() >= 30) $B.addClass("site-move");
-    else $B.removeClass("site-move");
+    else $B.removeClass("site-move"); 
   }
   chImageLoading();
   function chImageLoading(ajax) {
@@ -206,7 +206,7 @@ jQuery(function ($) {
   }
 
   window.addEventListener("popstate", function (event) {
-    location.reload();
+    location.reload(); 
   });
   $B.on("js_loaded", function () {
     window.dispatchEvent(new Event("resize"));

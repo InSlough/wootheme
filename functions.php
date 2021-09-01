@@ -7,7 +7,7 @@ function GV($gv)
   else if ($gv == 'critical') $gv = true;
   else if ($gv == 'critical_min') $gv = false;
   else if ($gv == 'ver') $gv = "1.000";
-  else if ($gv == 'slug') $gv = "royal-forest";
+  else if ($gv == 'slug') $gv = "Wootheme";
   else if ($gv == 'home_id') $gv = 2;
   else $gv = 0;
   return $gv;

@@ -13,7 +13,8 @@ add_action('wp_enqueue_scripts', function () {
 
   // ?? Scripts for Site (Footer)
   wp_enqueue_script("focus-visible", getUrl("/assets/focus-visible.js"), null, '5.2.0', true);
-  f_add_script('libs', 0, 1); // wp_enqueue_script("libs",getUrl("/dist/js/libs.js"),array('jquery'),GV('ver'),true);
+  // f_add_script('libs', 0, 1);
+  wp_enqueue_script("libs",getUrl("/dist/js/libs/libs.js"),array('jquery'),GV('ver'),true);
 
   // global $wp_query;
   wp_register_script("main", getUrl("/dist/js/main.js"), array('jquery'), GV('ver'), true);

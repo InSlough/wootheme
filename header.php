@@ -7,6 +7,8 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+
 
   <?php if (0) : ?>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -38,10 +40,9 @@
     <link rel="preload" href="<?php tUrl('/assets/critical.css?ver=' . gV('ver')); ?>" as="style" />
   <?php endif; ?>
 
-  <?php if (1) : ?>
+  <?php if (0) : ?>
     <link rel="preload" href="<?php tUrl('/dist/img/bb.svg'); ?>" as="image" type="image/svg+xml" />
   <?php endif; ?>
-
 
   <?php wp_head(); ?>
 
@@ -58,7 +59,7 @@
       ?>>
 
   <div id="site-loader" data-nosnippet style="display: none;">
-    <?php if (1) : ?>
+    <?php if (0) : ?>
       <img class="l" src="<?php tUrl('/dist/img/bb.svg'); ?>" alt="<?php echo $site_name; ?>" />
     <?php endif; ?>
     <div class="sl-progress">
@@ -85,13 +86,19 @@
             </h1>
           <?php } ?>
         </div>
-        <div class="col-auto">
+        <div class="col">
           <nav role="navigation">
             <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
           </nav>
         </div>
         <div class="col-auto">
-          <button aria-label="Меню" class="menu-icon">
+          <a class="btn-acc" href="<?php echo wc_get_page_permalink('myaccount') ?>"><img src="<?php tUrl() ?>/dist/img/acc.svg" alt="">My account</a>
+          <a href="<?php echo get_site_url() ?>/cart" class="btn-cart">
+            <img src="<?php tUrl() ?>/dist/img/shopping-cart.svg" alt="">
+          </a>
+        </div>
+        <div class="col-auto">
+          <button aria-label="Menu" class="menu-icon">
             <div class="lines"></div>
             <div class="lines"></div>
             <div class="lines"></div>

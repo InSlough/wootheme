@@ -6,21 +6,22 @@
 */
 
 // @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:wght@400;600&display=swap");
-@font-face {
-  font-family: "Gabriola";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Gabriola"), url("../../assets/gabriola.woff") format("woff");
-}
+// @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:wght@400;600&display=swap");
+// @font-face {
+//   font-family: "Gabriola";
+//   font-style: normal;
+//   font-weight: normal;
+//   src: local("Gabriola"), url("../../assets/gabriola.woff") format("woff");
+// }
+
 
 html {
-  background-color: $bgc;
+  background-color: #fff;
 }
 
 body {
   color: $primary;
-  font-family: "Montserrat", var(--bs-font-sans-serif, sans-serif);
+  font-family: "Gotham", var(--bs-font-sans-serif, sans-serif);
 
   // font-family: "Gabriola", serif;   // 'Gabriola' - regular (400)
   // font-family: "DM Serif Text", serif;   // 'DM Serif Text' - regular (400)
@@ -174,3 +175,20 @@ body:not(.js-loaded)::-webkit-scrollbar {
     opacity: 1;
   }
 }
+
+h1 {
+  font-size: 72px;
+}
+
+h3 {
+ font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  text-transform: uppercase;
+}
+

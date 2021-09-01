@@ -150,3 +150,4 @@ function classes_for_main($extra = '')
   $classes = array_map('esc_attr', $classes);
   echo 'class="' . esc_attr(implode(' ', array_unique($classes))) . '"';
 }
+

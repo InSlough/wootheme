@@ -31,8 +31,12 @@ add_action('wp_enqueue_scripts', function () {
 add_action('get_footer', function () {
   // ?? Add to Site Footer
   // f_add_style('file_name', 0);
-  f_add_style('libs');
-  f_add_style('main');
+  // f_add_style('libs');
+  // f_add_style('main');
+  // f_add_c_style(getUrl('/dist/css/libs,min.css'));
+  // f_add_c_style(getUrl('/dist/css/main.css'));
+  wp_enqueue_style('main', getUrl('/dist/css/main.css') , NULL, GV('ver'));
+  wp_enqueue_style('libs', getUrl('/dist/css/libs.min.css') , NULL, GV('ver'));
   // wp_enqueue_style('jquery-scrollbar', getUrl('/css/jquery.scrollbar.css') , NULL, GV('ver'));
   // wp_enqueue_script('jquery-scrollbar', getUrl('/js/jquery.scrollbar.min.js') , NULL, GV('ver'), true);
 });
