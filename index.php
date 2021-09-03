@@ -11,6 +11,9 @@ if (is_404()) {
   //
   // get_template_part('template-parts/wishlist');
   //
+} elseif (is_page('news')) {
+  //
+  get_template_part('template-parts/archive');
 } elseif (is_page('discounts')) {
   //
   // get_template_part('template-parts/discounts');

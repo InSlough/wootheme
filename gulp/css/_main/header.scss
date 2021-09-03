@@ -21,6 +21,7 @@
     color: $dark;
   }
   > div {
+    max-width: 1650px;
     > .row {
       transition: height 200ms;
       height: var(--menu-h);
@@ -132,7 +133,6 @@
           overflow: hidden;
           // font-family: "DM Serif Text", serif;
           font-family: serif;
-          font-size: 8vh;
           font-weight: 900;
           line-height: 1.15;
           letter-spacing: 3px;

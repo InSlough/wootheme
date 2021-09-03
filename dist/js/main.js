@@ -212,6 +212,8 @@ jQuery(function ($) {
     window.dispatchEvent(new Event("resize"));
   });
 
+  document.getElementById("defaultOpen").click();
+
   DEV && console.log("End Site jQuery");
 });
 function throttle(func, ms) {

@@ -199,10 +199,18 @@ p {
   font-style: 16px;
 }
 
+a {
+  color: #fff;
+}
+
 button {
   text-transform: uppercase;
 }
 
 section {
-  margin: 100px 0;
+  margin: 110px 0 120px;
+}
+section.nm-p {
+  margin: 0;
+  padding: 110px auto 120px;
 }

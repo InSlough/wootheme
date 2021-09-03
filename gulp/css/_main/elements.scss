@@ -241,3 +241,65 @@
     }
   }
 }
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  margin-left: -0.5%;
+  margin-right: -0.5%;
+}
+
+/* Style the buttons inside the tab */
+.tab a {
+  background-color: #EDEDED;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  transition: 0.3s;
+  font-size: 20px;
+  width: 24%;
+  margin: 0.5%;
+  text-transform: none;
+  text-align: center;
+  color: #000;
+  border-radius: 6px;
+  img {
+    margin-top: -7px;
+    margin-right: 15px;
+  }
+}
+
+/* Change background color of buttons on hover */
+.tab a:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab a.active {
+  background-color: #C5C5C5;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  // padding: 6px 12px;
+  // border: 1px solid #ccc;
+  border-top: none;
+  color: #fff;
+}
+
+.aop-content .tabcontent {
+  color: #000;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
