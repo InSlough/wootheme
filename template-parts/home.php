@@ -35,7 +35,8 @@ $p = getUrl('/dist/img/');
       </div>
     </div>
   </div>
-  <section class="container sp-section">
+  <section class="sp-section">
+    <div class="container">
     <div class="row">
       <div class="col-md-6 col-12">
         <h3>See Your Floor Plan Inside</h3>
@@ -57,6 +58,7 @@ $p = getUrl('/dist/img/');
       <div class="col-lg-6 col-12"><img src="<?php echo get_site_url();
                                               ?>/wp-content/uploads/2021/09/Plan-image.png" alt=""></div>
     </div>
+</div>
   </section>
   <section class="why-section">
     <div class="container">

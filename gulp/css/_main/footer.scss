@@ -21,8 +21,8 @@ footer {
   overflow: hidden;
   color: #fff;
   > div {
-    padding-top: 4rem;
-    padding-bottom: 1.5rem;
+    // margin-top: 4rem;
+    // padding-bottom: 1.5rem;
   }
   .bot-bord > div:first-child {
     padding-bottom: 4rem;
@@ -73,14 +73,20 @@ footer {
   .container-fluid {
     background-image: url("../img/footer.png");
     max-width: 1900px;
-    min-height: 300px;
     text-align: center;
     // padding-top: 0;
     padding-bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 55px;
     a {
-      min-height: 300px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       h3 {
         margin-top: 0;
+        margin-bottom: 0;
       }
     }
     p {
