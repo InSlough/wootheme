@@ -43,9 +43,9 @@ if (!defined('ABSPATH')) {
       <div class="col text-lg-end">
         <span style="display: block;">Follow Us On Social Media:</span>
         <div class="link-block">
-          <a href="#"><img src="<? tUrl(); ?>/dist/img/F.svg" alt=""></a>
-          <a href="#"><img src="<? tUrl(); ?>/dist/img/T.svg" alt=""></a>
-          <a href="#"><img src="<? tUrl(); ?>/dist/img/Y.svg" alt=""></a>
+          <a href="#"><img src="<? tUrl(); ?>/dist/img/f.svg" alt=""></a>
+          <a href="#"><img src="<? tUrl(); ?>/dist/img/t.svg" alt=""></a>
+          <a href="#"><img src="<? tUrl(); ?>/dist/img/y.svg" alt=""></a>
         </div>
       </div>
     </div>

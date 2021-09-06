@@ -35,6 +35,10 @@ if (is_404()) {
     get_template_part('template-parts/products/single');
     //
   */
+} elseif (get_post_type() === 'post') {
+  //
+  get_template_part('template-parts/single-post');
+  //
 } elseif (is_singular()) {
   //
   get_template_part('template-parts/single');

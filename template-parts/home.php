@@ -19,7 +19,7 @@ $p = getUrl('/dist/img/');
             <div class="col">
               <div class="first-section-content">
                 <h1>Discover Your Next Home</h1>
-                <h3>We'll help you find the perfect plan</h3>
+                <h2>We'll help you find the perfect plan</h2>
                 <p>Search nearly 40,000 floor plans and find your dream home today</p>
                 <div class="fb-block">
                   <button type="button" class="btn btn-light">Bedrooms</button>
@@ -39,7 +39,7 @@ $p = getUrl('/dist/img/');
     <div class="container">
     <div class="row">
       <div class="col-md-6 col-12">
-        <h3>See Your Floor Plan Inside</h3>
+        <h2>See Your Floor Plan Inside</h2>
         <p style="font-size:20px;">You can see your floor plans in 3D views. So you can imagine
           the design interior of your future home.
         </p>
@@ -64,25 +64,25 @@ $p = getUrl('/dist/img/');
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h3 class="ta-c">Why Choose Us?</h3>
+          <h2 class="ta-c">Why Choose Us?</h2>
           <div class="why-r">
             <div class="why-c">
               <img src="<?php tUrl() ?>/dist/img/qi.svg" alt="">
-              <h5>Quality craftsmanship</h5>
+              <h3>Quality craftsmanship</h3>
               <p>We create new value and always provide
                 high-quality products to enrich the everyday
                 lives of our consumers. </p>
             </div>
             <div class="why-c">
               <img src="<?php tUrl() ?>/dist/img/hi.svg" alt="">
-              <h5>Comfortable style</h5>
+              <h3>Comfortable style</h3>
               <p>With so many types of house styles,
                 narrowing the list down to your favorite
                 can be overwhelming.</p>
             </div>
             <div class="why-c">
               <img src="<?php tUrl() ?>/dist/img/si.svg" alt="">
-              <h5>Get help when you need it</h5>
+              <h3>Get help when you need it</h3>
               <p>Have questions? Call 1-800-950-2155. Our
                 customer support is the best in the business.</p>
             </div>
@@ -95,7 +95,7 @@ $p = getUrl('/dist/img/');
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-12">
-          <h3>New & Exclusive Home Designs</h3>
+          <h2>New & Exclusive Home Designs</h2>
           <p style="font-size:20px;">We have the best and unique home designs for every need.
           </p>
         </div>
@@ -175,7 +175,7 @@ $p = getUrl('/dist/img/');
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h3>Ask Us a Question</h3>
+          <h2>Ask Us a Question</h2>
           <? echo do_shortcode('[contact-form-7 id="41" title="Contact form 1"]'); ?>
         </div>
       </div>
@@ -185,7 +185,7 @@ $p = getUrl('/dist/img/');
   <section class="container reviews_section">
     <div class="row">
       <div class="col-12">
-        <h3>Reviews</h3>
+        <h2>Reviews</h2>
         <p style="font-size:20px;">We've helped over 75,000 people shop for a new home plan</p>
       </div>
     </div>
@@ -195,7 +195,7 @@ $p = getUrl('/dist/img/');
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h3>What We Offer</h3>
+          <h2>What We Offer</h2>
           <div>
           <div class="blur-o">
           <p>Our company offers a first-class experience in helping our clients get the best home plans for their needs.

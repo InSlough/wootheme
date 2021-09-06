@@ -31,7 +31,7 @@ if (!defined('ABSPATH')) exit;
                 <img src="<?php echo get_the_post_thumbnail_url($post, 'full'); ?>" alt="">
                 <div class="content">
                   <?php echo $data ?>
-                  <h4><?php the_title(); ?></h4>
+                  <h3><?php the_title(); ?></h3>
                   <div class="meta-p"><?php echo the_date(); if (get_the_date()!=9 && the_author()!=0) {echo' | ';} echo the_author() ?></div>
                   <?php the_excerpt(); ?>
                   <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Read the story</a>

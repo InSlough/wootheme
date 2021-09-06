@@ -170,26 +170,26 @@ html.desktop {
     flex-direction: column;
     align-items: center;
   }
-  label {
-    margin-bottom: 20px;
+}
+label {
+  margin-bottom: 20px;
+}
+input:not(.wpcf7-submit),
+textarea {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  &::placeholder {
+    color: #000;
   }
-  input:not(.wpcf7-submit),
-  textarea {
-    padding: 10px 20px;
-    border-radius: 6px;
-    border: none;
-    &::placeholder {
-      color: #000;
-    }
-  }
+}
 
-  input.wpcf7-submit {
-    border: none;
-    display: block;
-    width: 100%;
-    text-transform: uppercase;
-    border-radius: 6px;
-  }
+input.wpcf7-submit {
+  border: none;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 6px;
 }
 
 .reviews-section {
@@ -215,6 +215,18 @@ html.desktop {
 }
 
 .first-fluid {
+  @include media-breakpoint-up(md) {
+    .text-center {
+      min-height: 305px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   h1 {
     color: #fff;
   }
@@ -243,13 +255,16 @@ html.desktop {
 
 .bg-container section {
   margin: 0 auto;
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 120px;
 }
 
-.aop-why {
-  > row:nth-child(2) {
-    background-image: url();
+.aop-why,
+.aop-3-content-1 {
+  > .row:nth-child(2) {
+    background: url("../img/border.svg") 0 0 no-repeat, url("../img/border-2.svg") 100% 0 no-repeat, url("../img/border-3.svg") 0 100% no-repeat,
+      url("../img/border-4.svg") 100% 100% no-repeat;
+    padding: 25px;
   }
 }
 
@@ -265,7 +280,7 @@ html.desktop {
     a {
       font-size: 13px;
       padding: 1rem 2rem;
-      background: #BB9A61;
+      background: #bb9a61;
       border-radius: 6px;
     }
   }
@@ -276,4 +291,246 @@ html.desktop {
 }
 
 .post-content {
+}
+
+.contact-col {
+  display: flex;
+  img {
+    width: 60px;
+    display: flex;
+    align-self: flex-start;
+    margin-right: 20px;
+  }
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.contact-feedback {
+  background: #ededed;
+
+  .cf-cp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 760px;
+    margin: 0 auto;
+    > div:not(:nth-child(3)) label {
+      width: calc(50% - 10px);
+      input {
+        width: 100%;
+      }
+      @include media-breakpoint-up(md) {
+        &:first-child {
+          margin-right: 10px;
+        }
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+    > div:nth-child(3) {
+      width: 100%;
+      label {
+        width: 100%;
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+    > div:last-child {
+      width: 100%;
+      input {
+        width: 100%;
+        background: #bb9a61;
+        padding: 15px 0;
+        font-size: 13px;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.page-content,
+.aop-5-content-1 {
+  h4 {
+    font-weight: normal;
+    margin: 0.5rem 0;
+  }
+
+  h3 {
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/ol1.svg");
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      color: #fff;
+    }
+    &:nth-of-type(1)::before {
+      content: "1";
+    }
+    &:nth-of-type(2)::before {
+      content: "2";
+    }
+    &:nth-of-type(3)::before {
+      content: "3";
+    }
+    &:nth-of-type(4)::before {
+      content: "4";
+    }
+    &:nth-of-type(5)::before {
+      content: "5";
+    }
+    &:nth-of-type(6)::before {
+      content: "6";
+    }
+    &:nth-of-type(7)::before {
+      content: "7";
+    }
+    &:nth-of-type(8)::before {
+      content: "8";
+    }
+    &:nth-of-type(9)::before {
+      content: "9";
+    }
+    &:nth-of-type(10)::before {
+      content: "10";
+    }
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.aop-2-content-1 {
+  .col-md-6 h3 {
+    margin-bottom: 50px;
+  }
+  img {
+    padding: 30px;
+    background: #c5c5c5;
+  }
+  .col-12:last-child h3 {
+    font-weight: normal;
+    margin-top: 100px;
+    padding: 45px 0;
+    border: 3px solid #bb9a61;
+  }
+}
+
+.aop-2-plans {
+  .row:first-child h4 {
+    margin-bottom: 50px;
+  }
+  .row:not(:first-child) {
+    > div {
+      > div {
+        margin-bottom: 2rem;
+        background-color: #ededed;
+        padding: 10px 30px;
+        height: calc(100% - 24px);
+        p {
+          margin-bottom: 2rem;
+        }
+        img {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  .row:last-child {
+    img {
+      width: calc(50% - 15px);
+      &:first-of-type {
+        margin-right: 25px;
+      }
+    }
+  }
+}
+
+.aop-2-why, .aop-4-content-1, .aop-6-content-1 {
+  h3 {
+    color: #bb9a61;
+  }
+}
+
+.row:first-child h4 {
+  margin-bottom: 50px;
+}
+.aop-3-option {
+  .row:not(:first-child) {
+    > div {
+      > div {
+        margin-bottom: 2rem;
+        background-color: #ededed;
+        padding: 10px 30px;
+        height: calc(100% - 24px);
+      }
+    }
+  }
+}
+
+
+.aop-5-content-1 {
+  h2 {
+    margin-bottom: 50px;
+  }
+}
+
+.aop-5-example {
+  h2 {
+    margin-bottom: 100px;
+  }
+  h4::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='21' viewBox='0 0 22 21'%3E%3Cg id='home_2' data-name='home 2' transform='translate(0 -15.017)'%3E%3Cpath id='Контур_139' data-name='Контур 139' d='M56.646,204.771H41.984A1.963,1.963,0,0,1,40,202.833v-10.2a.69.69,0,0,1,1.38,0v10.2a.6.6,0,0,0,.6.59H56.646a.6.6,0,0,0,.6-.59v-10.2a.69.69,0,0,1,1.38,0v10.2A1.963,1.963,0,0,1,56.646,204.771Z' transform='translate(-38.315 -168.754)' fill='%23fff'/%3E%3Cpath id='Контур_140' data-name='Контур 140' d='M21.313,26.463a.692.692,0,0,1-.486-.2l-8.55-8.383a1.832,1.832,0,0,0-2.552,0l-8.55,8.383a.7.7,0,0,1-.972,0,.665.665,0,0,1,0-.953l8.55-8.383a3.228,3.228,0,0,1,4.5,0l8.55,8.383a.665.665,0,0,1,0,.953A.692.692,0,0,1,21.313,26.463Z' transform='translate(0 -1)' fill='%23fff'/%3E%3Cpath id='Контур_141' data-name='Контур 141' d='M182.067,296.746h-5.393a.674.674,0,0,1-.674-.674v-5.982a2.109,2.109,0,0,1,2.106-2.106h2.528a2.109,2.109,0,0,1,2.106,2.106v5.982A.674.674,0,0,1,182.067,296.746Zm-4.718-1.348h4.044v-5.308a.759.759,0,0,0-.758-.758h-2.528a.759.759,0,0,0-.758.758Z' transform='translate(-168.37 -260.729)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 40px;
+    height: 40px;
+    background-color: #bb9a61;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding-top: 4px;
+    margin-right: 20px;
+  }
+  img {
+    padding: 30px;
+    background: #ededed;
+    margin-top: 20px;
+  }
+  li {
+    margin: 1rem;
+  }
+}
+
+.aop-6-content-1 {
+  h3 {
+    &:not(:first-of-type) {
+      margin-top: 100px;
+    }
+  }
+}
+
+.bg-white {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.7;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
 }

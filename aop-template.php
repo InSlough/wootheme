@@ -11,10 +11,10 @@ if (!defined('ABSPATH')) {
 get_header(); ?>
 
 <div class="page <?php echo $post->post_name; ?>">
-  <section class="container-fluid first-fluid" style="background-image: url('http://bhfp.local/wp-content/uploads/2021/09/Header.png');">
+  <section class="container-fluid first-fluid" style="background-image: url('<?php echo get_site_url();?>/wp-content/uploads/2021/09/Header.png');">
     <div class="row">
       <div class="col-12 text-center">
-        <h1>About Our Plans</h1>
+        <h1><?php echo the_title(); ?></h1>
       </div>
     </div>
   </section>
@@ -40,22 +40,21 @@ get_header(); ?>
     <section class="container">
       <div class="row">
         <div class="col-12">
-
-          <h3 class="text-center">Your Dream Home Starts With Us</h3>
-          <p>Building a new home can be daunting and frustrating, especially when you have a million questions and don't know where to find the answers.
-            We're here to relieve some of that stress by starting the home building process on the right foot.</p>
+          <h2 class="text-center">Your Dream Home Starts With Us</h2>
+          <h4>Building a new home can be daunting and frustrating, especially when you have a million questions and don't know where to find the answers.
+            We're here to relieve some of that stress by starting the home building process on the right foot.</h4>
         </div>
       </div>
     </section>
-    <div class="bg-container" style="background-image: url('http://bhfp.local/wp-content/uploads/2021/09/white-wall-empty-room-with-plants-on-a-floor-3d-rendering.png');">
+    <div class="bg-container" style="background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/2021/09/white-wall-empty-room-with-plants-on-a-floor-3d-rendering.png');">
       <section class="container aop-content-1">
         <div class="row">
           <div class="col-12">
-            <h3 class="text-center">Common Questions</h3>
+            <h2 class="text-center">Common Questions</h2>
           </div>
 
           <div class="col-md-5 col-12">
-            <h4>How Is Square Footage Calculated?</h4>
+            <h3>How Is Square Footage Calculated?</h3>
             <p>Square footage calculations shown on our website include only
               living (heated/cooled) spaces and are calculated from the outside
               perimeter of the exterior walls. They do not include decks, porches,
@@ -66,14 +65,14 @@ get_header(); ?>
               footage calculations.</p>
           </div>
           <div class="col-md-5 offset-md-1 col-12">
-            <h4>Can I Find Out If A Plan Was Built In My Area?</h4>
+            <h3>Can I Find Out If A Plan Was Built In My Area?</h3>
             Due to privacy issues, we are unable to provide any information
             regarding the location of homes that have been built from our
             house plans. However, if we have a photo of a home built from one
             of our plans it will available on our site.
           </div>
           <div class="col-12">
-            <h4>Can You Recommend A Plan To Me?</h4>
+            <h3>Can You Recommend A Plan To Me?</h3>
             <p>We are always glad to help our customers find just the right plan! Use our chat service or give us a call and we'll be happy to assit you.</p>
           </div>
       </section>
@@ -81,12 +80,12 @@ get_header(); ?>
     <section class="aop-why container">
       <div class="row">
         <div class="col-12">
-          <h3>Why Choose Us?</h3>
+          <h2 class="text-center">Why Choose Us?</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-5 col-12">
-          <h3>The Best Plans</h3>
+          <h2>The Best Plans</h2>
           <p>With America's Best House Plans, you can explore over 18,000
             house plans ranging from tiny houses to large mansions and
             everything in between. We offer over 40 different styles that cover
@@ -96,7 +95,7 @@ get_header(); ?>
             the right home for you and your family.</p>
         </div>
         <div class="col-lg-5 offset-lg-1 col-12">
-          <h3>The Best Prices</h3>
+          <h2>The Best Prices</h2>
           <p>Not only do we offer free shipping on all orders, but we also
             guarantee the lowest price possible. With our price matching
             policy, if you find one of our plans on a competitor's website for
@@ -106,7 +105,7 @@ get_header(); ?>
             that make it easy to modify a house plan to fit your needs.</p>
         </div>
         <div class="col-12">
-          <h3>The Best Service</h3>
+          <h2>The Best Service</h2>
           <p>Our customers are our top priority! With over 30 years in the industry, we know the importance of giving our customers the best service possible.
             We offer a live chat directly on our website where you can personally speak with a customer service representative and you can also call us
             directly! As a family owned and operated company, we do our best to treat you like you are family.</p>

@@ -1,10 +1,10 @@
 <?php if (!defined('ABSPATH')) exit; ?>
 
-<div class="post-single <?php echo $post->post_name; ?>">
+<div class="page-single <?php echo $post->post_name; ?>">
   <section class="container-fluid first-fluid" style="background-image: url('http://bhfp.local/wp-content/uploads/2021/09/Header.png');">
     <div class="row">
       <div class="col-12 text-center">
-        <h1>News</h1>
+        <h1><?php echo the_title(); ?></h1>
       </div>
     </div>
   </section>
@@ -13,37 +13,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2>
-            <?php the_title(); ?>
-          </h2>
-          <img src="<?php echo get_the_post_thumbnail_url($post, 'full'); ?>" alt="">
-        </div>
-      </div>
-
-      <div class="row post-content">
-        <div class="col-12">
-          <div class="post-info">
-          <div class="meta-p"><?php echo get_the_date(); if (get_the_date()!=9 && the_author()!=0) {echo' | ';} the_author() ?></div>
-          </div>
-        </div>
-        <?php $permalink = get_the_permalink() ?>
-        <div class="col-12 post-share">
-          <a href="https://facebook.com/sharer/sharer.php?u=<?php echo $permalink ?>">
-            <img src="<?php tUrl(); ?>/img/f.svg" alt="">
-          </a>
-          <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $permalink ?>">
-            <img src="<?php tUrl(); ?>/img/in.svg" alt="">
-          </a>
-          <a href="https://twitter.com/intent/tweet/?url=<?php echo $permalink ?>">
-            <img src="<?php tUrl(); ?>/img/tv.svg" alt="">
-          </a>
-        </div>
-        <div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="post-content">
+          <div class="page-content">
             <?php the_content(); ?>
           </div>
         </div>
@@ -55,42 +25,3 @@
   //   get_template_part('template-parts/contact_form_wrapper');
   // }
   ?>
-  <div class="container">
-    <div class="row">
-      <?php
-      $args = array(
-        'posts_per_page' => 3
-      );
-
-      $query = new WP_Query($args);
-
-      if ($query->have_posts()) {
-        $index = 0;
-        while ($query->have_posts()) {
-          $index++;
-          $query->the_post();
-      ?>
-
-          <div class="col-lg-4 col-12">
-            <div class="post-block">
-            <img src="<?php echo get_the_post_thumbnail_url($post, 'full'); ?>" alt="">
-              <div class="content">
-                <h4><?php the_title(); ?></h4>
-                <?php the_excerpt(); ?>
-                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Read the story</a>
-              </div>
-            </div>
-          </div>
-          <?php
-
-          ?>
-
-      <?php
-        }
-      } else {
-      }
-      wp_reset_postdata();
-      ?>
-    </div>
-  </div>
-</div>
