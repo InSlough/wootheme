@@ -21,15 +21,15 @@ get_header(); ?>
   <section class="container tabs_section">
     <div class="row">
       <div class="col-12">
-        <div class="tab">
-          <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">About Our Plans</button>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">What Do Plans Include</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">Plan Options</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">Local Building Codes</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">Finding The Right Plan</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">Modification Services</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">The Purchase Agreement</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">Estimating Costs</a>
+      <div class="tab">
+          <a href="/about-our-plans/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">About Our Plans</button>
+            <a href="/what-plans-include/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/2.svg" alt="">What Do Plans Include</a>
+            <a href="/plan-options/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/3.svg" alt="">Plan Options</a>
+            <a href="/local-building-codes/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/4.svg" alt="">Local Building Codes</a>
+            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/5.svg" alt="">Finding The Right Plan</a>
+            <a href="/modifications/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/6.svg" alt="">Modification Services</a>
+            <a href="/the-purchase-agreement/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/7.svg" alt="">The Purchase Agreement</a>
+            <a href="/estimating-costs/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/8.svg" alt="">Estimating Costs</a>
         </div>
 
 

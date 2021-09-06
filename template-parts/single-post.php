@@ -1,7 +1,7 @@
 <?php if (!defined('ABSPATH')) exit; ?>
 
 <div class="post-single <?php echo $post->post_name; ?>">
-  <section class="container-fluid first-fluid" style="background-image: url('http://bhfp.local/wp-content/uploads/2021/09/Header.png');">
+  <section class="container-fluid first-fluid" style="background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/2021/09/Header.png');">
     <div class="row">
       <div class="col-12 text-center">
         <h1>News</h1>
@@ -13,7 +13,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2>
+          <h2 style="margin-top: 0;">
             <?php the_title(); ?>
           </h2>
           <img src="<?php echo get_the_post_thumbnail_url($post, 'full'); ?>" alt="">

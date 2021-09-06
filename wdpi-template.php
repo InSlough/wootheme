@@ -22,16 +22,15 @@ get_header(); ?>
     <div class="row">
       <div class="col-12">
         <div class="tab">
-          <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">About Our Plans</button>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">What Do Plans Include</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">Plan Options</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">Local Building Codes</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">Finding The Right Plan</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">Modification Services</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">The Purchase Agreement</a>
-            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">Estimating Costs</a>
+          <a href="/about-our-plans/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/1.svg" alt="">About Our Plans</button>
+            <a href="/what-plans-include/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/2.svg" alt="">What Do Plans Include</a>
+            <a href="/plan-options/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/3.svg" alt="">Plan Options</a>
+            <a href="/local-building-codes/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/4.svg" alt="">Local Building Codes</a>
+            <a href="#" class="tablinks"><img src="<?php tUrl() ?>/dist/img/5.svg" alt="">Finding The Right Plan</a>
+            <a href="/modifications/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/6.svg" alt="">Modification Services</a>
+            <a href="/the-purchase-agreement/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/7.svg" alt="">The Purchase Agreement</a>
+            <a href="/estimating-costs/" class="tablinks"><img src="<?php tUrl() ?>/dist/img/8.svg" alt="">Estimating Costs</a>
         </div>
-
 
       </div>
     </div>
@@ -164,8 +163,8 @@ get_header(); ?>
       <section class="container aop-2-content-1">
         <h2 class="text-center">Are Your Plans Being Implemented By An Architect Or Engineer?</h2>
         <p>Standard house plans are not signed by an architect or engineer. Although our plans are based on national building codes; some municipalities
-may require a licensed architect or civil engineer in your area to review the plan. Check with your local building authority to determine if an
-architect stamp is required, and if so, you will need to ask the local architect to do so before starting construction.</p>
+          may require a licensed architect or civil engineer in your area to review the plan. Check with your local building authority to determine if an
+          architect stamp is required, and if so, you will need to ask the local architect to do so before starting construction.</p>
       </section>
     </div>
   </section>

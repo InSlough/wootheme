@@ -455,7 +455,9 @@ input.wpcf7-submit {
   }
 }
 
-.aop-2-why, .aop-4-content-1, .aop-6-content-1 {
+.aop-2-why,
+.aop-4-content-1,
+.aop-6-content-1 {
   h3 {
     color: #bb9a61;
   }
@@ -476,7 +478,6 @@ input.wpcf7-submit {
     }
   }
 }
-
 
 .aop-5-content-1 {
   h2 {
@@ -532,5 +533,52 @@ input.wpcf7-submit {
   .container {
     position: relative;
     z-index: 2;
+  }
+}
+
+.about-first > div > div {
+  &:first-child {
+    @include media-breakpoint-up(md) {
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+  }
+  &:last-child {
+    position: relative;
+    border: 10px solid #c5c5c5;
+    img {
+      position: absolute;
+      height: calc(100% - 80px);
+      top: 50%;
+      transform: translateY(-50%);
+      left: -40px;
+    }
+  }
+}
+
+.about-last > div {
+  &:first-child > div {
+    &:last-child {
+      @include media-breakpoint-up(md) {
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+    }
+    &:first-child {
+      position: relative;
+      border: 10px solid #c5c5c5;
+      img {
+        position: absolute;
+        height: calc(100% - 80px);
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40px;
+      }
+    }
+  }
+  &:last-child {
+    @include media-breakpoint-up(md) {
+      margin-top: 110px;
+    }
   }
 }
