@@ -1,0 +1,3 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/a7lhbervah1u/public_html/wp-content/themes/wootheme
