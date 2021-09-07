@@ -19,6 +19,9 @@ remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_lo
 
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
 
+remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
+remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10 );
+
 // remove_action('hook_name', 'func_name', 10);
 // remove_action('hook_name', 'func_name', 10);
 

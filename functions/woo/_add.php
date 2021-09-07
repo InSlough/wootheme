@@ -7,11 +7,11 @@ add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop
 add_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_title', 50);
 add_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_price', 55);
 
-add_action('woocommerce_before_shop_loop', function () {
-  echo '<div class="products-filters-toggle--container"><button type="button" class="btn products-filters-toggle">';
-  _e('Фильтры', GV('slug'));
-  echo '</button></div>';
-}, 20);
+// add_action('woocommerce_before_shop_loop', function () {
+//   echo '<div class="products-filters-toggle--container"><button type="button" class="btn products-filters-toggle">';
+//   _e('Filter', GV('slug'));
+//   echo '</button></div>';
+// }, 20);
 
 // ? Relocate product tabs
 add_action('woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 70);
@@ -38,9 +38,9 @@ add_action('wp_enqueue_scripts', function () {
 // ? Register shop-sidebar
 add_action('widgets_init', function () {
   register_sidebar(array(
-    'name'           => __('Боковая панель каталога', GV('slug')),
+    'name'           => __('Right sidebar category', GV('slug')),
     'id'             => "shop-sidebar",
-    'description'    => __('Здесь будут отображаться в основном фильтры товаров', GV('slug')),
+    'description'    => __('This category product', GV('slug')),
     // 'class'          => '',
     'before_widget'  => '<div id="%1$s" class="widget %2$s">',
     'after_widget'   => "</div>\n",
@@ -49,4 +49,28 @@ add_action('widgets_init', function () {
     'before_sidebar' => '<div class="shop-sidebar %2$s">', // WP 5.6
     'after_sidebar'  => "</div>\n", // WP 5.6
   ));
+});
+add_action('widgets_init', function () {
+  register_sidebar(array(
+    'name'           => __('Right sidebar filter', GV('slug')),
+    'id'             => "shop-filter",
+    'description'    => __('This filters product', GV('slug')),
+    // 'class'          => '',
+    'before_widget'  => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'   => "</div>\n",
+    'before_title'   => '<h2 class="widgettitle">',
+    'after_title'    => "</h2>\n",
+    'before_sidebar' => '<div class="shop-sidebar-filter %2$s">', // WP 5.6
+    'after_sidebar'  => "</div>\n", // WP 5.6
+  ));
+});
+
+add_action('description_init', function() {
+  if ( is_product_taxonomy() && 0 === absint( get_query_var( 'paged' ) ) ) {
+    $term = get_queried_object();
+
+    if ( $term && ! empty( $term->description ) ) {
+      echo '<div class="term-description">' . wc_format_content( wp_kses_post( $term->description ) ) . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+    }
+  }
 });

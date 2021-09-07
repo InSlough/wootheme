@@ -191,13 +191,13 @@ $p = getUrl('/dist/img/');
     </div>
   </section>
 
-  <section class="wwo_section nm-p" style="background-image: url('http://bhfp.local/wp-content/uploads/2021/09/Background-ask-us.png);">
+  <section class="wwo_section nm-p" style="background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/2021/09/Offer-pic.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2>What We Offer</h2>
+          <h2 class="text-center">What We Offer</h2>
           <div>
-          <div class="blur-o">
+          <div class="blur-o"></div>
           <p>Our company offers a first-class experience in helping our clients get the best home plans for their needs.
             We continually provide our clients with the largest selection of quality home designs in the country, created
             by best-in-class architects and home designers from across the country. We not only offer house plans, but
@@ -208,7 +208,7 @@ $p = getUrl('/dist/img/');
             beat their price by 10%! Additionally, if a competitor is offering a percent off discount, we will match the
             competitor's sale price. We also offer affordable customizations that make it easy to modify a house plan
             to fit your needs.</p>
-            </div>
+
             </div>
         </div>
       </div>

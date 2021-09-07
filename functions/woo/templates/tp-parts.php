@@ -8,7 +8,7 @@ if (!function_exists('woocommerce_show_product_loop_sale_flash')) {
     // wc_get_template('loop/sale-flash.php');
     global $post, $product;
     if ($product->is_on_sale())
-      echo apply_filters('woocommerce_sale_flash', '<span class="onsale">' . esc_html__('Скидка', GV('slug')) . '</span>', $post, $product);
+      echo apply_filters('woocommerce_sale_flash', '<span class="onsale">' . esc_html__('Sale', GV('slug')) . '</span>', $post, $product);
   }
 }
 if (!function_exists('woocommerce_show_product_sale_flash')) {

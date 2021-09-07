@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) exit;
 // do_action('ac_js', 'archive', "/dist/js/extra/archive");
 ?>
 <div class="page-archive">
-  <section class="container-fluid first-fluid" style="background-image: url('http://bhfp.local/wp-content/uploads/2021/09/Header.png');">
+  <section class="container-fluid first-fluid" style="background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/2021/09/Header.png');">
     <div class="row">
       <div class="col-12 text-center">
         <h1><?php echo get_the_title() ?></h1>
@@ -32,7 +32,7 @@ if (!defined('ABSPATH')) exit;
                 <div class="content">
                   <?php echo $data ?>
                   <h3><?php the_title(); ?></h3>
-                  <div class="meta-p"><?php echo the_date(); if (get_the_date()!=9 && the_author()!=0) {echo' | ';} echo the_author() ?></div>
+                  <div class="meta-p"><?php echo the_date(); if (get_the_date()!=0 && the_author()!=0) {echo' | ';} echo the_author(); ?></div>
                   <?php the_excerpt(); ?>
                   <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Read the story</a>
                 </div>
