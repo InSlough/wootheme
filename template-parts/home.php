@@ -171,7 +171,8 @@ $p = getUrl('/dist/img/');
       </div>
     </div>
   </section>
-  <section class="contact_home_section nm-p" style="background-image: url('http://bhfp.local/wp-content/uploads/2021/09/Background-ask-us.png);">
+  <section class="contact_home_section nm-p" style="background-image: url('<?php echo get_site_url();
+                  ?>/wp-content/uploads/2021/09/Background-ask-us.png);">
     <div class="container">
       <div class="row">
         <div class="col-12">

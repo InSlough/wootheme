@@ -48,15 +48,27 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_shop_loop_item_title' );
   echo'<div class="ai-title-info"><span>Plan 021-0051</span><span>from $ 1200.00</span></div>
-  <div class="ai-info"><div class="co-1"><span><b>3</b> Beds </span><span> <b>2.5</b> Baths </span> <span><b>2500</b> SQ FT</span></div>
-  <div class="co-2"><span><b>1</b> story</span><span> <b>80" 10"</b> wide </span> <span><b>62" 2"</b> deep</span></div></div>';
+  <div class="ai-info">
+  <div class="co-1">
+    <span><b>3</b> Beds </span>
+    <span><b>1</b> story</span>
+  </div>
+  <div class="co-2">
+    <span> <b>2.5</b> Baths </span>
+    <span> <b>80" 10"</b> wide </span>
+  </div>
+  <div class="co-3">
+    <span><b>2500</b> SQ FT</span>
+    <span><b>62" 2"</b> deep</span>
+  </div>
+</div>';
 	/**
 	 * Hook: woocommerce_after_shop_loop_item_title.
 	 *
 	 * @hooked woocommerce_template_loop_rating - 5
 	 * @hooked woocommerce_template_loop_price - 10
 	 */
-	do_action( 'woocommerce_after_shop_loop_item_title' );
+	//do_action( 'woocommerce_after_shop_loop_item_title' );
 
 	/**
 	 * Hook: woocommerce_after_shop_loop_item.
@@ -64,6 +76,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_link_close - 5
 	 * @hooked woocommerce_template_loop_add_to_cart - 10
 	 */
-	do_action( 'woocommerce_after_shop_loop_item' );
+	//do_action( 'woocommerce_after_shop_loop_item' );
 	?>
 </li>
