@@ -76,19 +76,110 @@ add_action('woocommerce_before_main_content', function () {
       <div class="filter-attributes">
         <h5>Bedrooms</h5>
         <div>
-          <a href=""><span>1</span></a><a href=""><span>2</span></a><a href=""><span>3</span></a><a href=""><span>4</span></a><a href=""><span>5+</span></a>
+          <div>
+            <a href="">
+              <span>1</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>2</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>3</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>4</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>5+</span>
+            </a>
+          </div>
         </div>
         <h5>Bathrooms</h5>
         <div>
-          <a href=""><span>1</span></a><a href=""><span>1.5</span></a><a href=""><span>2</span></a><a href=""><span>2.5</span></a><a href=""><span>3</span></a><a href=""><span>3.5</span></a><a href=""><span>4+</span></a>
+          <div>
+            <a href="">
+              <span>1</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>1.5</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>2</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>2.5</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>3</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>3.5</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>4+</span>
+            </a>
+          </div>
         </div>
         <h5>Stories</h5>
         <div>
-          <a href=""><span>1</span></a><a href=""><span>2</span></a><a href="">3+</a>
+          <div>
+            <a href="">
+              <span>1</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>2</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>3+</span>
+            </a>
+          </div>
         </div>
         <h5>Garages</h5>
         <div>
-          <a href=""><span>0</span></a><a href=""><span>1</span></a><a href=""><span>2</span></a><a href=""><span>3+</span></a>
+          <div>
+            <a href="">
+              <span>0</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>1</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>2</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>3+</span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="filter-custom-attributes">
@@ -99,10 +190,10 @@ add_action('woocommerce_before_main_content', function () {
           <span>Plan #</span>
         </div>
         <div>
-           <div><input type="text" placeholder="Min"><input type="text" placeholder="Max"></div>
-           <div><input type="text" placeholder="Min"><input type="text" placeholder="Max"></div>
-           <div><input type="text" placeholder="Min"><input type="text" placeholder="Max"></div>
-           <div><input type="text" placeholder="Enter Plan #"></div>
+          <div><input type="text" placeholder="Min"><input type="text" placeholder="Max"></div>
+          <div><input type="text" placeholder="Min"><input type="text" placeholder="Max"></div>
+          <div><input type="text" placeholder="Min"><input type="text" placeholder="Max"></div>
+          <div><input type="text" placeholder="Enter Plan #"></div>
         </div>
       </div>
       <div class="filter-tags">

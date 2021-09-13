@@ -727,6 +727,12 @@ input.wpcf7-submit {
     }
   }
   .filter-attributes {
+    > div > div {
+      width: 30px;
+      text-align: center;
+      display: inline-block;
+      margin-right: 8px;
+    }
     h5 {
       font-weight: normal;
       margin: 1.2rem 0 1rem;
@@ -737,9 +743,7 @@ input.wpcf7-submit {
     a {
       font-size: 13px;
       color: #000;
-      padding: 4px 10px;
       position: relative;
-      margin-right: 10px;
       span {
         position: relative;
         z-index: 2;
